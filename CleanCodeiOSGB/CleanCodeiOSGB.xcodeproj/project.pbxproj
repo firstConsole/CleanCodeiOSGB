@@ -16,6 +16,14 @@
 		BB782A802997D29D00BC676B /* CleanCodeiOSGBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782A7F2997D29D00BC676B /* CleanCodeiOSGBTests.swift */; };
 		BB782A8A2997D29D00BC676B /* CleanCodeiOSGBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782A892997D29D00BC676B /* CleanCodeiOSGBUITests.swift */; };
 		BB782A8C2997D29D00BC676B /* CleanCodeiOSGBUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782A8B2997D29D00BC676B /* CleanCodeiOSGBUITestsLaunchTests.swift */; };
+		BB782AA52997F91E00BC676B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782AA42997F91E00BC676B /* LoginViewController.swift */; };
+		BB782AA82997FAD500BC676B /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782AA72997FAD500BC676B /* RegistrationViewController.swift */; };
+		BB782AAB2997FB1700BC676B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782AAA2997FB1700BC676B /* ProfileViewController.swift */; };
+		BB782AAE2998F84E00BC676B /* Registartion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782AAD2998F84E00BC676B /* Registartion.swift */; };
+		BB782AB12998F8DE00BC676B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782AB02998F8DE00BC676B /* UserModel.swift */; };
+		BB782AB42998FABD00BC676B /* LogOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782AB32998FABD00BC676B /* LogOut.swift */; };
+		BB782AB72998FAF900BC676B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782AB62998FAF900BC676B /* Login.swift */; };
+		BB782ABA2998FB2000BC676B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782AB92998FB2000BC676B /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		BB782A852997D29D00BC676B /* CleanCodeiOSGBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanCodeiOSGBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB782A892997D29D00BC676B /* CleanCodeiOSGBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCodeiOSGBUITests.swift; sourceTree = "<group>"; };
 		BB782A8B2997D29D00BC676B /* CleanCodeiOSGBUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCodeiOSGBUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BB782AA42997F91E00BC676B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BB782AA72997FAD500BC676B /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		BB782AAA2997FB1700BC676B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BB782AAD2998F84E00BC676B /* Registartion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registartion.swift; sourceTree = "<group>"; };
+		BB782AB02998F8DE00BC676B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		BB782AB32998FABD00BC676B /* LogOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOut.swift; sourceTree = "<group>"; };
+		BB782AB62998FAF900BC676B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		BB782AB92998FB2000BC676B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +167,9 @@
 		BB782A9B2997D99D00BC676B /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				BB782AA62997FA9B00BC676B /* RegistrationViewController */,
+				BB782AA12997F8EE00BC676B /* LoginViewController */,
+				BB782AA92997FAFA00BC676B /* ProfileViewController */,
 				BB782AA02997DFAA00BC676B /* MainViewController */,
 				BB782A6E2997D29C00BC676B /* Main.storyboard */,
 			);
@@ -167,6 +186,7 @@
 		BB782A9D2997D9CE00BC676B /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				BB782AAF2998F8CA00BC676B /* UserModel */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -174,6 +194,10 @@
 		BB782A9E2997D9DD00BC676B /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				BB782AAC2998F83A00BC676B /* Registartion */,
+				BB782AB52998FAEB00BC676B /* Login */,
+				BB782AB22998FAA900BC676B /* LogOut */,
+				BB782AB82998FB1100BC676B /* Profile */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -197,6 +221,70 @@
 				BB782A6C2997D29C00BC676B /* MainViewController.swift */,
 			);
 			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		BB782AA12997F8EE00BC676B /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB782AA42997F91E00BC676B /* LoginViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		BB782AA62997FA9B00BC676B /* RegistrationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB782AA72997FAD500BC676B /* RegistrationViewController.swift */,
+			);
+			path = RegistrationViewController;
+			sourceTree = "<group>";
+		};
+		BB782AA92997FAFA00BC676B /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB782AAA2997FB1700BC676B /* ProfileViewController.swift */,
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		BB782AAC2998F83A00BC676B /* Registartion */ = {
+			isa = PBXGroup;
+			children = (
+				BB782AAD2998F84E00BC676B /* Registartion.swift */,
+			);
+			path = Registartion;
+			sourceTree = "<group>";
+		};
+		BB782AAF2998F8CA00BC676B /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				BB782AB02998F8DE00BC676B /* UserModel.swift */,
+			);
+			path = UserModel;
+			sourceTree = "<group>";
+		};
+		BB782AB22998FAA900BC676B /* LogOut */ = {
+			isa = PBXGroup;
+			children = (
+				BB782AB32998FABD00BC676B /* LogOut.swift */,
+			);
+			path = LogOut;
+			sourceTree = "<group>";
+		};
+		BB782AB52998FAEB00BC676B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BB782AB62998FAF900BC676B /* Login.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BB782AB82998FB1100BC676B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BB782AB92998FB2000BC676B /* Profile.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,9 +418,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB782AB42998FABD00BC676B /* LogOut.swift in Sources */,
+				BB782AB72998FAF900BC676B /* Login.swift in Sources */,
+				BB782AAB2997FB1700BC676B /* ProfileViewController.swift in Sources */,
+				BB782AAE2998F84E00BC676B /* Registartion.swift in Sources */,
+				BB782AA52997F91E00BC676B /* LoginViewController.swift in Sources */,
 				BB782A6D2997D29C00BC676B /* MainViewController.swift in Sources */,
 				BB782A692997D29C00BC676B /* AppDelegate.swift in Sources */,
 				BB782A6B2997D29C00BC676B /* SceneDelegate.swift in Sources */,
+				BB782ABA2998FB2000BC676B /* Profile.swift in Sources */,
+				BB782AB12998F8DE00BC676B /* UserModel.swift in Sources */,
+				BB782AA82997FAD500BC676B /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
