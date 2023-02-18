@@ -7,6 +7,18 @@
 
 import Foundation
 
-final class LogOut {
+protocol LogOutProtocol {
+    func cleanUserData()
+    func cleanCache()
+}
+
+final class LogOut: LogOutProtocol {
+    func cleanUserData() {
+        Session.session.id = 0
+        Session.session.userDataLogin = [:]
+    }
     
+    func cleanCache() {
+        
+    }
 }

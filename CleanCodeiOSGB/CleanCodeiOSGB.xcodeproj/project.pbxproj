@@ -24,6 +24,12 @@
 		BB782AB42998FABD00BC676B /* LogOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782AB32998FABD00BC676B /* LogOut.swift */; };
 		BB782AB72998FAF900BC676B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782AB62998FAF900BC676B /* Login.swift */; };
 		BB782ABA2998FB2000BC676B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782AB92998FB2000BC676B /* Profile.swift */; };
+		BB782B4829A0F1AD00BC676B /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782B4729A0F1AD00BC676B /* LoginTests.swift */; };
+		BB782B4B29A0F1F900BC676B /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782B4A29A0F1F900BC676B /* LoginResult.swift */; };
+		BB782B4D29A0F27E00BC676B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782B4C29A0F27E00BC676B /* User.swift */; };
+		BB782B5029A0F77B00BC676B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782B4F29A0F77B00BC676B /* Session.swift */; };
+		BB782B5229A0FE4500BC676B /* LogOutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782B5129A0FE4500BC676B /* LogOutTests.swift */; };
+		BB782B5429A0FF6E00BC676B /* ProfileDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782B5329A0FF6E00BC676B /* ProfileDataTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,12 @@
 		BB782AB32998FABD00BC676B /* LogOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOut.swift; sourceTree = "<group>"; };
 		BB782AB62998FAF900BC676B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		BB782AB92998FB2000BC676B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		BB782B4729A0F1AD00BC676B /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		BB782B4A29A0F1F900BC676B /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		BB782B4C29A0F27E00BC676B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BB782B4F29A0F77B00BC676B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		BB782B5129A0FE4500BC676B /* LogOutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutTests.swift; sourceTree = "<group>"; };
+		BB782B5329A0FF6E00BC676B /* ProfileDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +138,9 @@
 		BB782A7E2997D29D00BC676B /* CleanCodeiOSGBTests */ = {
 			isa = PBXGroup;
 			children = (
+				BB782B4729A0F1AD00BC676B /* LoginTests.swift */,
+				BB782B5129A0FE4500BC676B /* LogOutTests.swift */,
+				BB782B5329A0FF6E00BC676B /* ProfileDataTests.swift */,
 				BB782A7F2997D29D00BC676B /* CleanCodeiOSGBTests.swift */,
 			);
 			path = CleanCodeiOSGBTests;
@@ -160,6 +175,7 @@
 		BB782A9A2997D97900BC676B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BB782B4E29A0F76C00BC676B /* Session */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -186,6 +202,7 @@
 		BB782A9D2997D9CE00BC676B /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				BB782B4929A0F1DE00BC676B /* LoginModel */,
 				BB782AAF2998F8CA00BC676B /* UserModel */,
 			);
 			path = Entity;
@@ -285,6 +302,23 @@
 				BB782AB92998FB2000BC676B /* Profile.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		BB782B4929A0F1DE00BC676B /* LoginModel */ = {
+			isa = PBXGroup;
+			children = (
+				BB782B4A29A0F1F900BC676B /* LoginResult.swift */,
+				BB782B4C29A0F27E00BC676B /* User.swift */,
+			);
+			path = LoginModel;
+			sourceTree = "<group>";
+		};
+		BB782B4E29A0F76C00BC676B /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				BB782B4F29A0F77B00BC676B /* Session.swift */,
+			);
+			path = Session;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,7 +452,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB782B5029A0F77B00BC676B /* Session.swift in Sources */,
+				BB782B4D29A0F27E00BC676B /* User.swift in Sources */,
 				BB782AB42998FABD00BC676B /* LogOut.swift in Sources */,
+				BB782B4B29A0F1F900BC676B /* LoginResult.swift in Sources */,
 				BB782AB72998FAF900BC676B /* Login.swift in Sources */,
 				BB782AAB2997FB1700BC676B /* ProfileViewController.swift in Sources */,
 				BB782AAE2998F84E00BC676B /* Registartion.swift in Sources */,
@@ -436,7 +473,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB782B5229A0FE4500BC676B /* LogOutTests.swift in Sources */,
 				BB782A802997D29D00BC676B /* CleanCodeiOSGBTests.swift in Sources */,
+				BB782B4829A0F1AD00BC676B /* LoginTests.swift in Sources */,
+				BB782B5429A0FF6E00BC676B /* ProfileDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
